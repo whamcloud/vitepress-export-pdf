@@ -8,15 +8,15 @@ importers:
 
   .:
     dependencies:
-      '@condorhero/vuepress-plugin-export-pdf-core':
-        specifier: ^3.0.3
-        version: 3.0.3(esbuild@0.20.2)(typescript@5.4.5)
       debug:
         specifier: ^4.3.4
         version: https://registry.npmmirror.com/debug/-/debug-4.3.4.tgz
       hash-sum:
         specifier: ^2.0.0
         version: https://registry.npmmirror.com/hash-sum/-/hash-sum-2.0.0.tgz
+      vuepress-plugin-export-pdf-core:
+        specifier: https://gitpkg.vercel.app/whamcloud/vuepress-plugin-export-pdf/packages/vuepress-plugin-export-pdf-core?main
+        version: '@condorhero/vuepress-plugin-export-pdf-core@https://gitpkg.vercel.app/whamcloud/vuepress-plugin-export-pdf/packages/vuepress-plugin-export-pdf-core?main(esbuild@0.20.2)(typescript@5.4.5)'
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.17.0
@@ -310,13 +310,15 @@ packages:
     bundledDependencies:
       - is-unicode-supported
 
-  '@condorhero/merge-pdfs@0.0.7':
-    resolution: {integrity: sha512-qx4dpWrKYVNEg0VH8zjAo9lq6Au7M7cQi/RTUzfECv/jslHVYw9zQ/E5i/aO0BCaghUzaFRsoCdlilgmOMwGTw==}
+  '@condorhero/merge-pdfs@https://codeload.github.com/whamcloud/merge-pdfs/tar.gz/558c922c0a595d008c5002285921cc235aec075a':
+    resolution: {tarball: https://codeload.github.com/whamcloud/merge-pdfs/tar.gz/558c922c0a595d008c5002285921cc235aec075a}
+    version: 0.0.7
     engines: {node: '>=18.5.0'}
     hasBin: true
 
-  '@condorhero/vuepress-plugin-export-pdf-core@3.0.3':
-    resolution: {integrity: sha512-wmifVw9TUOYWgihUBTcgdlzB0TW9uVtsQsRLrHKiW9gxyICiJhMQNmTtfKvtuqEhk/p6ML8qQAQ+K+k9ro3EuA==}
+  '@condorhero/vuepress-plugin-export-pdf-core@https://gitpkg.vercel.app/whamcloud/vuepress-plugin-export-pdf/packages/vuepress-plugin-export-pdf-core?main':
+    resolution: {tarball: https://gitpkg.vercel.app/whamcloud/vuepress-plugin-export-pdf/packages/vuepress-plugin-export-pdf-core?main}
+    version: 3.0.3
     engines: {node: '>=8.6'}
 
   '@docsearch/css@3.6.0':
@@ -1158,10 +1160,6 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  agent-base@7.1.0:
-    resolution: {integrity: sha512-o/zjMZRhJxny7OyEF+Op8X+efiELC7k7yOjMzgfzVqOzXqkBkWI79YoTdOtsuWd5BWhAGAuOY/Xa6xpiaWXiNg==}
-    engines: {node: '>= 14'}
-
   agent-base@7.1.1:
     resolution: {integrity: sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==}
     engines: {node: '>= 14'}
@@ -1406,10 +1404,6 @@ packages:
 
   colorette@2.0.20:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
-
-  commander@11.0.0:
-    resolution: {integrity: sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==}
-    engines: {node: '>=16'}
 
   commander@11.1.0:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
@@ -2942,6 +2936,7 @@ packages:
   puppeteer@21.11.0:
     resolution: {integrity: sha512-9jTHuYe22TD3sNxy0nEIzC7ZrlRnDgeX3xPkbS7PnbdwYjl2o/z/YuCrRBwezdKpbTDTJ4VqIggzNyeRcKq3cg==}
     engines: {node: '>=16.13.2'}
+    deprecated: < 22.6.4 is no longer supported
     hasBin: true
 
   queue-microtask@1.2.3:
@@ -3893,20 +3888,20 @@ snapshots:
       picocolors: 1.0.0
       sisteransi: 1.0.5
 
-  '@condorhero/merge-pdfs@0.0.7':
+  '@condorhero/merge-pdfs@https://codeload.github.com/whamcloud/merge-pdfs/tar.gz/558c922c0a595d008c5002285921cc235aec075a':
     dependencies:
       colorette: 2.0.20
       fast-glob: 3.3.2
       yargs: 17.7.2
 
-  '@condorhero/vuepress-plugin-export-pdf-core@3.0.3(esbuild@0.20.2)(typescript@5.4.5)':
+  '@condorhero/vuepress-plugin-export-pdf-core@https://gitpkg.vercel.app/whamcloud/vuepress-plugin-export-pdf/packages/vuepress-plugin-export-pdf-core?main(esbuild@0.20.2)(typescript@5.4.5)':
     dependencies:
-      '@condorhero/merge-pdfs': 0.0.7
       bundle-require: 4.1.0(esbuild@0.20.2)
       cac: 6.7.14
       envinfo: 7.13.0
       fs-extra: 11.2.0
       html-export-pdf-cli: 1.1.5(typescript@5.4.5)
+      merge-pdfs: '@condorhero/merge-pdfs@https://codeload.github.com/whamcloud/merge-pdfs/tar.gz/558c922c0a595d008c5002285921cc235aec075a'
       multimatch: 7.0.0
       ora: 8.0.1
       pdfjs: 2.5.3
@@ -4669,12 +4664,6 @@ snapshots:
 
   acorn@8.9.0: {}
 
-  agent-base@7.1.0:
-    dependencies:
-      debug: 4.3.4
-    transitivePeerDependencies:
-      - supports-color
-
   agent-base@7.1.1:
     dependencies:
       debug: 4.3.4
@@ -4943,8 +4932,6 @@ snapshots:
   colord@2.9.3: {}
 
   colorette@2.0.20: {}
-
-  commander@11.0.0: {}
 
   commander@11.1.0: {}
 
@@ -5754,7 +5741,7 @@ snapshots:
   html-export-pdf-cli@1.1.5(typescript@5.4.5):
     dependencies:
       cli-progress: 3.12.0
-      commander: 11.0.0
+      commander: 11.1.0
       fast-glob: 3.3.2
       html-entities: 2.4.0
       pdf-lib: 1.17.1
@@ -5768,14 +5755,14 @@ snapshots:
 
   http-proxy-agent@7.0.0:
     dependencies:
-      agent-base: 7.1.0
+      agent-base: 7.1.1
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@7.0.4:
     dependencies:
-      agent-base: 7.1.0
+      agent-base: 7.1.1
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
@@ -6260,7 +6247,7 @@ snapshots:
   pac-proxy-agent@7.0.1:
     dependencies:
       '@tootallnate/quickjs-emscripten': 0.23.0
-      agent-base: 7.1.0
+      agent-base: 7.1.1
       debug: 4.3.4
       get-uri: 6.0.1
       http-proxy-agent: 7.0.0
@@ -6551,7 +6538,7 @@ snapshots:
 
   proxy-agent@6.3.1:
     dependencies:
-      agent-base: 7.1.0
+      agent-base: 7.1.1
       debug: 4.3.4
       http-proxy-agent: 7.0.0
       https-proxy-agent: 7.0.4
