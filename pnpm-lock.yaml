@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@whamcloud-ddn/vuepress-plugin-export-pdf-core':
-        specifier: '*'
-        version: 3.0.3(esbuild@0.20.2)(typescript@5.4.5)
+        specifier: 3.0.4
+        version: 3.0.4(esbuild@0.20.2)(typescript@5.4.5)
       debug:
         specifier: ^4.3.4
         version: https://registry.npmmirror.com/debug/-/debug-4.3.4.tgz
@@ -60,12 +60,12 @@ importers:
 
   examples/vitepress-docs:
     devDependencies:
+      '@whamcloud-ddn/vitepress-export-pdf':
+        specifier: workspace:^
+        version: link:../..
       vitepress:
         specifier: ^1.1.4
         version: 1.1.4(@algolia/client-search@4.23.3)(@types/node@20.3.3)(postcss@8.4.38)(search-insights@2.6.0)(typescript@5.4.5)
-      vitepress-export-pdf:
-        specifier: workspace:^
-        version: link:../..
 
 packages:
 
@@ -1122,13 +1122,13 @@ packages:
   '@vueuse/shared@10.9.0':
     resolution: {integrity: sha512-Uud2IWncmAfJvRaFYzv5OHDli+FbOzxiVEQdLCKQKLyhz94PIyFC3CHcH7EDMwIn8NPtD06+PNbC/PiO0LGLtw==}
 
-  '@whamcloud-ddn/merge-pdfs@0.0.7':
-    resolution: {integrity: sha512-Rg0+2ilYzHnS5xaXVMJfJk/YpN86LjWMFMksrCJHpJ0A9p4B2e7WWk3/WzfUqKZcPANTfem25C1rBPqY7OgVVg==}
+  '@whamcloud-ddn/merge-pdfs@0.0.8':
+    resolution: {integrity: sha512-ZmYnmbwWI/mT74NT2tRNTFKjreslBj8+5c8hhpyKFG0Lw0rivZPhLNJ5Sfv0lDPkarIvBYphVuXvYe6dNIAD8A==}
     engines: {node: '>=18.5.0'}
     hasBin: true
 
-  '@whamcloud-ddn/vuepress-plugin-export-pdf-core@3.0.3':
-    resolution: {integrity: sha512-dp7E/UI4ZU5mcgA8n8XAFq2teARsyhS/qxLxVjS3ayJG4uSLJH6dkAzs4yYMQ9Vq+UxPtAa0OkkCGneywAwI2g==}
+  '@whamcloud-ddn/vuepress-plugin-export-pdf-core@3.0.4':
+    resolution: {integrity: sha512-X+LO10/aD9/b7db233CK+bJLtCGlgqpAA/pkpjUbyl2xSzAlESmhw6IyWP9BhZ3nFz9dj99o5VJC6sETXSGGaw==}
     engines: {node: '>=8.6'}
 
   acorn-jsx@5.3.2:
@@ -4596,15 +4596,15 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@whamcloud-ddn/merge-pdfs@0.0.7':
+  '@whamcloud-ddn/merge-pdfs@0.0.8':
     dependencies:
       colorette: 2.0.20
       fast-glob: 3.3.2
       yargs: 17.7.2
 
-  '@whamcloud-ddn/vuepress-plugin-export-pdf-core@3.0.3(esbuild@0.20.2)(typescript@5.4.5)':
+  '@whamcloud-ddn/vuepress-plugin-export-pdf-core@3.0.4(esbuild@0.20.2)(typescript@5.4.5)':
     dependencies:
-      '@whamcloud-ddn/merge-pdfs': 0.0.7
+      '@whamcloud-ddn/merge-pdfs': 0.0.8
       bundle-require: 4.2.1(esbuild@0.20.2)
       cac: 6.7.14
       envinfo: 7.13.0

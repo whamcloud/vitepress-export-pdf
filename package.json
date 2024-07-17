@@ -1,7 +1,7 @@
 {
   "name": "@whamcloud-ddn/vitepress-export-pdf",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@9.1.0",
   "description": "VitePress export PDF",
   "author": "CondorHero",
@@ -68,7 +68,7 @@
     "vitepress": ">=1.0.0-alpha.35"
   },
   "dependencies": {
-    "@whamcloud-ddn/vuepress-plugin-export-pdf-core": "*",
+    "@whamcloud-ddn/vuepress-plugin-export-pdf-core": "3.0.4",
     "debug": "^4.3.4",
     "hash-sum": "^2.0.0"
   },
