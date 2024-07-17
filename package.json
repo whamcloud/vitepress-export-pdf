@@ -1,5 +1,5 @@
 {
-  "name": "vitepress-export-pdf",
+  "name": "@whamcloud-ddn/vitepress-export-pdf",
   "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@9.1.0",
@@ -68,8 +68,7 @@
     "vitepress": ">=1.0.0-alpha.35"
   },
   "dependencies": {
-    "vuepress-plugin-export-pdf-core": "https://gitpkg.vercel.app/whamcloud/vuepress-plugin-export-pdf/packages/vuepress-plugin-export-pdf-core?main",
-
+    "@whamcloud-ddn/vuepress-plugin-export-pdf-core": "*",
     "debug": "^4.3.4",
     "hash-sum": "^2.0.0"
   },
